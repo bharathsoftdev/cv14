@@ -59,5 +59,8 @@ int main ( )
         
         ++temp ;
         
+        if ( temp != loop )
+            cout << endl ;
+        
     }
 }
