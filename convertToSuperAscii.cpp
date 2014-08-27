@@ -15,7 +15,7 @@ int main ( )
 	{
 		cin >> str ;
         
-        temp = 0 ; cost = 0; pos = 0; neg = 0 ;
+        cost = 0; pos = 0; neg = 0 ;
         add = 0, del = 0, rep = 0 ;
         
 		for ( int t2 = 0 ; t2 < 28 ; t2++ )
@@ -40,10 +40,11 @@ int main ( )
             
         }
         
-        cout << pos << ' ' << neg << endl ;
+        //cout << pos << ' ' << neg << endl ;
         
 		cost = 0 ;
-		if ( pos < neg)
+		
+        if ( pos < neg)
             rep = pos ;
         else
             rep = neg ;
@@ -52,16 +53,11 @@ int main ( )
         
         cost = rep + ( add * 2 ) + ( del * 3 ) ;
         
-        cout << endl << rep << ' ' << add << ' ' <<  del << ' ' << cost << endl ;
+        //cout << endl << rep << ' ' << add << ' ' <<  del << ' ' << cost << endl ;
         
-		for ( int t2 = 0 ; t2 < 28 ; t2++ )
-        {
-            cout << count[t2] << endl ;
-			//if ( count [t2] != 0 && count [t2] != t2 )
-			{
-				
-			}
-		}
+        cout << cost ;
+        
+        ++temp ;
         
     }
 }
